@@ -2,7 +2,7 @@ import NextAuth from 'next-auth'
 import { PrismaAdapter } from '@next-auth/prisma-adapter'
 import GoogleProvider from 'next-auth/providers/google'
 import FitbitProvider from 'next-auth/providers/fitbit'
-import prisma from '@/lib/prisma'
+import prisma from '@/app/lib/prisma'
 
 export const authOptions = {
   adapter: PrismaAdapter(prisma),
